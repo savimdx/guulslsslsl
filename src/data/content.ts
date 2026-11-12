@@ -11,9 +11,9 @@ export const DEFAULT_CONFIG: OfferConfig = {
   installments: 'ou 2x de R$ 10,40 no cartão',
   savingsText: 'Você economiza R$ 77,10 hoje',
   guaranteeDays: 7,
-  productTitle: 'Mapas Mentais de Fórmulas de Matemática',
+  productTitle: 'Mapas Mentais de Fórmulas de Matemática — Ensino Médio e Concursos Públicos',
   heroHeadlineHighlight: '+180 Mapas Mentais',
-  heroHeadlineSuffix: 'de Fórmulas de Matemática do Ensino Médio',
+  heroHeadlineSuffix: 'de Fórmulas de Matemática do Ensino Médio e Concursos Públicos',
   heroSubtitle:
     'Aprenda, revise e memorize as principais fórmulas de Matemática de maneira visual, simples e organizada. Tenha tudo o que precisa para estudar em um só lugar, serve para o Ensino Médio e para Concursos Públicos!',
   topBannerText: '⚡ OFERTA ESPECIAL DISPONÍVEL POR TEMPO LIMITADO!',
@@ -115,7 +115,7 @@ export const MINDMAP_SLIDES: MindMapSlide[] = [
 export const WHAT_YOU_RECEIVE_ITEMS = [
   { text: 'Mais de 180 mapas mentais de Matemática', detail: 'Cobre absolutamente todo o currículo do Ensino Médio' },
   { text: 'Fórmulas organizadas por assunto', detail: 'Fácil localização em segundos sem perder tempo' },
-  { text: 'Conteúdo completo do Ensino Médio', detail: '1º, 2º e 3º ano com foco em ENEM e Vestibulares' },
+  { text: 'Conteúdo do Ensino Médio e Concursos Públicos', detail: 'Foco total em provas, vestibulares (ENEM) e concursos públicos' },
   { text: 'Resumos visuais e objetivos', detail: 'Sem enrolação teórica: direto ao ponto e com esquemas' },
   { text: 'Material de fácil consulta', detail: 'Diagramação limpa em alta definição para celular e PC' },
   { text: 'Ideal para revisão e estudos', detail: 'Acelera a fixação antes de provas e simulados' },

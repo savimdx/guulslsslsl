@@ -36,9 +36,9 @@ export function HeroSection({ onCtaClick, onOpenImage, subtitle }: HeroSectionPr
         </div>
 
         {/* Main Headline */}
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[52px] font-extrabold text-[#07152B] tracking-tight leading-[1.15] mb-5 max-w-3xl">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[50px] font-extrabold text-[#07152B] tracking-tight leading-[1.15] mb-5 max-w-4xl">
           <span className="text-[#FF9500] drop-shadow-xs">+180 Mapas Mentais</span>{' '}
-          de Fórmulas de Matemática do Ensino Médio
+          de Fórmulas de Matemática do Ensino Médio e Concursos Públicos
         </h1>
 
         {/* Subtitle */}
@@ -55,14 +55,6 @@ export function HeroSection({ onCtaClick, onOpenImage, subtitle }: HeroSectionPr
               className="w-full h-auto object-cover cursor-pointer"
               onClick={() => onOpenImage(PRODUCT_BUNDLE_IMAGE, "Apostila Digital + Caderno de Mapas Mentais de Matemática")}
             />
-            {/* Click to expand hint overlay */}
-            <button
-              onClick={() => onOpenImage(PRODUCT_BUNDLE_IMAGE, "Apostila Digital + Caderno de Mapas Mentais de Matemática")}
-              className="absolute bottom-3 right-3 bg-[#07152B]/85 hover:bg-[#07152B] text-white text-xs px-3 py-1.5 rounded-lg flex items-center gap-1.5 backdrop-blur-xs transition-opacity"
-            >
-              <Eye className="w-3.5 h-3.5 text-[#FF9500]" />
-              Clique para ampliar
-            </button>
           </div>
         </div>
 

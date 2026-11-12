@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Star, ChevronLeft, ChevronRight, Phone, Video, CheckCheck, Play, Mic, MessageSquare } from 'lucide-react';
+import { Star, ChevronLeft, ChevronRight, Phone, Video, CheckCheck, Play, Mic } from 'lucide-react';
 import { TESTIMONIALS_DATA } from '../data/content';
 import { TestimonialItem } from '../types';
 
@@ -178,20 +178,6 @@ export function TestimonialsSection({ customTestimonials, onOpenCustomizer }: Te
               />
             ))}
           </div>
-        </div>
-
-        {/* Space reservation note & config button */}
-        <div className="mt-8 inline-flex items-center gap-2 text-xs text-slate-500 bg-slate-50 px-4 py-2 rounded-lg border border-slate-200">
-          <MessageSquare className="w-3.5 h-3.5 text-[#1769D2]" />
-          <span>Espaço reservado para depoimentos reais dos seus estudantes.</span>
-          {onOpenCustomizer && (
-            <button
-              onClick={onOpenCustomizer}
-              className="text-[#1769D2] hover:underline font-semibold ml-1 cursor-pointer"
-            >
-              Configurar depoimentos
-            </button>
-          )}
         </div>
       </div>
     </section>

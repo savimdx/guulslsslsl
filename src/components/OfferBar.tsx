@@ -15,7 +15,6 @@ export function OfferBar({ bannerText }: OfferBarProps) {
       aria-label="Barra de oferta especial"
       className="w-full bg-[#E53935] text-white py-2 px-4 text-center text-xs md:text-sm font-semibold tracking-wide shadow-sm flex items-center justify-center gap-2"
     >
-      <span className="inline-block animate-pulse">⚡</span>
       <span>
         {bannerText} <span className="opacity-90 font-medium">APENAS HOJE {today}</span>
       </span>

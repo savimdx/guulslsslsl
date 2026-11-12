@@ -4,7 +4,6 @@
  */
 
 import { useState, useEffect } from 'react';
-import { Sliders } from 'lucide-react';
 import { DEFAULT_CONFIG } from './data/content';
 import { OfferConfig } from './types';
 
@@ -30,13 +29,19 @@ export default function App() {
       const saved = localStorage.getItem(CONFIG_STORAGE_KEY);
       if (saved) {
         const parsed = JSON.parse(saved);
-        // Ensure new subtitle is adopted if user had an older version stored
+        // Ensure new subtitle and title are adopted if user had an older version stored
         if (
           !parsed.heroSubtitle ||
-          parsed.heroSubtitle.includes('em um só lugar!') &&
-          !parsed.heroSubtitle.includes('Concursos Públicos')
+          (parsed.heroSubtitle.includes('em um só lugar!') &&
+            !parsed.heroSubtitle.includes('Concursos Públicos'))
         ) {
           parsed.heroSubtitle = DEFAULT_CONFIG.heroSubtitle;
+        }
+        if (
+          !parsed.productTitle ||
+          !parsed.productTitle.includes('Concursos Públicos')
+        ) {
+          parsed.productTitle = DEFAULT_CONFIG.productTitle;
         }
         return { ...DEFAULT_CONFIG, ...parsed };
       }
@@ -136,19 +141,6 @@ export default function App() {
         onCtaClick={handleUniversalCta} 
         promoPrice={config.promoPrice} 
       />
-
-      {/* Floating Creator Config Trigger */}
-      <div className="fixed bottom-4 right-4 z-40">
-        <button
-          onClick={() => setIsConfigOpen(true)}
-          className="flex items-center gap-2 bg-[#07152B] hover:bg-[#1769D2] text-white text-xs font-bold px-3.5 py-2.5 rounded-full shadow-2xl border border-slate-700 hover:scale-105 transition-all duration-200 cursor-pointer group"
-          title="Configurar preços, link de checkout e textos da oferta"
-        >
-          <Sliders className="w-3.5 h-3.5 text-[#FF9500] group-hover:rotate-45 transition-transform" />
-          <span className="hidden sm:inline">Configurar Oferta & Checkout</span>
-          <span className="sm:hidden">Configurar</span>
-        </button>
-      </div>
 
       {/* Modals & Drawers */}
       <ConfigDrawer

@@ -1,4 +1,4 @@
-import { ShieldCheck, Award } from 'lucide-react';
+import { ShieldCheck } from 'lucide-react';
 
 interface GuaranteeSectionProps {
   days?: number;
@@ -9,11 +9,8 @@ export function GuaranteeSection({ days = 7 }: GuaranteeSectionProps) {
     <section className="bg-[#EAF3FF] py-16 md:py-20 px-4 sm:px-6 lg:px-8 border-b border-[#D6E6FA]">
       <div className="max-w-2xl mx-auto text-center flex flex-col items-center">
         {/* Shield Icon / Seal */}
-        <div className="w-16 h-16 rounded-full bg-white border-2 border-[#1769D2] text-[#1769D2] flex items-center justify-center shadow-md mb-4 relative">
+        <div className="w-16 h-16 rounded-full bg-white border-2 border-[#1769D2] text-[#1769D2] flex items-center justify-center shadow-md mb-4">
           <ShieldCheck className="w-9 h-9 text-[#1769D2]" />
-          <div className="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-[#FF9500] text-white flex items-center justify-center font-bold text-[10px]">
-            {days}d
-          </div>
         </div>
 
         {/* Title */}

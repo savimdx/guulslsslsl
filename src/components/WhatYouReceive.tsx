@@ -1,4 +1,4 @@
-import { CheckCircle2, Layers, BookMarked, Sparkles } from 'lucide-react';
+import { CheckCircle2, Layers } from 'lucide-react';
 import { WHAT_YOU_RECEIVE_ITEMS } from '../data/content';
 
 export function WhatYouReceive() {
@@ -39,27 +39,6 @@ export function WhatYouReceive() {
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Modules summary cards */}
-        <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
-          <div className="bg-[#EAF3FF] border border-[#BED7FA] p-4 rounded-xl">
-            <span className="text-2xl font-black text-[#1769D2]">1º Ano</span>
-            <h4 className="text-xs font-bold text-[#07152B] mt-1">Conjuntos, Funções e PA/PG</h4>
-            <p className="text-[11px] text-slate-600 mt-1">Bases sólidas para não travar na matemática avançada.</p>
-          </div>
-
-          <div className="bg-[#EAF3FF] border border-[#BED7FA] p-4 rounded-xl">
-            <span className="text-2xl font-black text-[#1769D2]">2º Ano</span>
-            <h4 className="text-xs font-bold text-[#07152B] mt-1">Trigonometria, Matrizes e Geometria</h4>
-            <p className="text-[11px] text-slate-600 mt-1">Geometria espacial e plana com visualização em 3D.</p>
-          </div>
-
-          <div className="bg-[#EAF3FF] border border-[#BED7FA] p-4 rounded-xl">
-            <span className="text-2xl font-black text-[#1769D2]">3º Ano</span>
-            <h4 className="text-xs font-bold text-[#07152B] mt-1">Estatística, Probabilidade e Análise</h4>
-            <p className="text-[11px] text-slate-600 mt-1">Os assuntos com maior peso e incidência no ENEM.</p>
-          </div>
         </div>
       </div>
     </section>

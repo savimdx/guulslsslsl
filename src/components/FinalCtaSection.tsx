@@ -1,4 +1,4 @@
-import { ArrowRight, Lock, BookOpen } from 'lucide-react';
+import { ArrowRight, Lock } from 'lucide-react';
 
 interface FinalCtaSectionProps {
   onCtaClick: () => void;
@@ -35,26 +35,7 @@ export function FinalCtaSection({ onCtaClick, promoPrice }: FinalCtaSectionProps
         </div>
 
         {/* Simple Footer Links & Legal */}
-        <div className="border-t border-slate-800/80 pt-8 text-center text-xs text-slate-400 space-y-4">
-          <div className="flex items-center justify-center gap-2 text-slate-300 font-bold text-sm">
-            <BookOpen className="w-4 h-4 text-[#FF9500]" />
-            <span>+180 Mapas Mentais de Fórmulas de Matemática do Ensino Médio</span>
-          </div>
-
-          <div className="flex flex-wrap justify-center gap-4 text-slate-400">
-            <a href="#termos" className="hover:text-white transition-colors">
-              Termos de Uso
-            </a>
-            <span>•</span>
-            <a href="#privacidade" className="hover:text-white transition-colors">
-              Política de Privacidade
-            </a>
-            <span>•</span>
-            <a href="#contato" className="hover:text-white transition-colors">
-              Contato & Suporte
-            </a>
-          </div>
-
+        <div className="border-t border-slate-800/80 pt-8 text-center text-xs text-slate-400">
           <p className="text-[11px] text-slate-400 leading-relaxed max-w-xl mx-auto">
             © {new Date().getFullYear()} Mapas Mentais de Matemática. Todos os direitos reservados.
             <br />

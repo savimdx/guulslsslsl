@@ -35,9 +35,6 @@ export function OfferCardSection({ config, onCtaClick, onOpenImage }: OfferCardS
                 className="w-full h-auto object-cover group-hover:scale-[1.02] transition-transform duration-300"
                 onClick={() => onOpenImage(PRODUCT_BUNDLE_IMAGE, config.productTitle)}
               />
-              <div className="absolute bottom-2 right-2 bg-black/60 text-white text-[10px] font-medium px-2 py-1 rounded backdrop-blur-xs">
-                Apostila + Mapas Mentais
-              </div>
             </div>
 
             {/* Included Core Benefits */}
@@ -58,7 +55,7 @@ export function OfferCardSection({ config, onCtaClick, onOpenImage }: OfferCardS
                 <div className="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0">
                   <Check className="w-3.5 h-3.5 stroke-[3]" />
                 </div>
-                <span>Conteúdo completo do Ensino Médio</span>
+                <span>Conteúdo do Ensino Médio e Concursos Públicos</span>
               </div>
               <div className="flex items-center gap-2.5">
                 <div className="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0">
@@ -128,18 +125,10 @@ export function OfferCardSection({ config, onCtaClick, onOpenImage }: OfferCardS
             </button>
 
             {/* Trust and Payment Security Badges */}
-            <div className="mt-5 space-y-2">
+            <div className="mt-5">
               <div className="flex items-center justify-center gap-2 text-xs font-semibold text-slate-500">
                 <Lock className="w-3.5 h-3.5 text-emerald-600" />
                 <span>Compra segura | Acesso digital imediato</span>
-              </div>
-
-              <div className="flex items-center justify-center gap-3 pt-2 text-[11px] font-bold text-slate-400">
-                <span className="px-2 py-0.5 bg-slate-100 rounded">VISA</span>
-                <span className="px-2 py-0.5 bg-slate-100 rounded">MasterCard</span>
-                <span className="px-2 py-0.5 bg-slate-100 rounded">Elo</span>
-                <span className="px-2 py-0.5 bg-slate-100 rounded">PIX</span>
-                <span className="px-2 py-0.5 bg-slate-100 rounded">Boleto</span>
               </div>
             </div>
           </div>

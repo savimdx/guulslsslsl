@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ChevronLeft, ChevronRight, Maximize2, Sparkles, Check, ZoomIn } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Maximize2, ZoomIn } from 'lucide-react';
 import { MINDMAP_SLIDES } from '../data/content';
 
 interface PracticeCarouselProps {
@@ -32,23 +32,6 @@ export function PracticeCarousel({ onOpenImage }: PracticeCarouselProps) {
         <p className="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto font-light mb-8">
           Mapas mentais elaborados com rigor pedagógico, hierarquia visual impecável e fórmulas prontas para memorização.
         </p>
-
-        {/* Category quick tabs */}
-        <div className="flex flex-wrap items-center justify-center gap-2 mb-8">
-          {MINDMAP_SLIDES.map((slide, idx) => (
-            <button
-              key={slide.id}
-              onClick={() => setCurrentIndex(idx)}
-              className={`px-3.5 py-1.5 rounded-full text-xs font-semibold transition-all duration-200 cursor-pointer ${
-                idx === currentIndex
-                  ? 'bg-[#1769D2] text-white shadow-md shadow-blue-900/50 scale-105'
-                  : 'bg-slate-800/80 text-slate-300 hover:bg-slate-700/80 hover:text-white border border-slate-700/60'
-              }`}
-            >
-              {slide.category}
-            </button>
-          ))}
-        </div>
 
         {/* Carousel Showcase Container */}
         <div className="relative max-w-4xl mx-auto bg-slate-900/70 border border-slate-700/80 rounded-2xl p-3 sm:p-5 shadow-2xl backdrop-blur-md">
@@ -114,44 +97,6 @@ export function PracticeCarousel({ onOpenImage }: PracticeCarouselProps) {
                 }`}
               />
             ))}
-          </div>
-        </div>
-
-        {/* Slide Info & Formula Highlights Bar */}
-        <div className="mt-8 bg-slate-850/80 border border-slate-700/60 rounded-xl p-4 sm:p-6 text-left max-w-4xl mx-auto">
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-700 pb-3 mb-4">
-            <div>
-              <span className="text-[#FF9500] text-xs font-bold uppercase tracking-wider">
-                {currentSlide.category} · Exemplo Prático #{currentIndex + 1}
-              </span>
-              <h3 className="text-lg sm:text-xl font-bold text-white mt-0.5">
-                {currentSlide.title}
-              </h3>
-            </div>
-            <span className="text-xs text-slate-400 font-mono">
-              Página {currentIndex + 1} de {MINDMAP_SLIDES.length} demonstradas
-            </span>
-          </div>
-
-          <p className="text-sm text-slate-300 leading-relaxed mb-4">
-            {currentSlide.description}
-          </p>
-
-          <div>
-            <span className="text-xs font-semibold text-slate-400 block mb-2 uppercase tracking-wider">
-              Fórmulas e tópicos inclusos neste mapa:
-            </span>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-              {currentSlide.formulas.map((formula, fIdx) => (
-                <div
-                  key={fIdx}
-                  className="bg-slate-900/90 border border-slate-700/50 rounded-lg px-3 py-2 text-xs font-mono text-cyan-300 flex items-center gap-2"
-                >
-                  <span className="text-[#FF9500] font-bold">»</span>
-                  <span className="truncate">{formula}</span>
-                </div>
-              ))}
-            </div>
           </div>
         </div>
       </div>
