@@ -4,9 +4,14 @@ import { PRODUCT_BUNDLE_IMAGE, MATH_TOPICS_TAGS } from '../data/content';
 interface HeroSectionProps {
   onCtaClick: () => void;
   onOpenImage: (imageSrc: string, title: string) => void;
+  subtitle?: string;
 }
 
-export function HeroSection({ onCtaClick, onOpenImage }: HeroSectionProps) {
+export function HeroSection({ onCtaClick, onOpenImage, subtitle }: HeroSectionProps) {
+  const displaySubtitle =
+    subtitle ||
+    'Aprenda, revise e memorize as principais fórmulas de Matemática de maneira visual, simples e organizada. Tenha tudo o que precisa para estudar em um só lugar, serve para o Ensino Médio e para Concursos Públicos!';
+
   return (
     <section className="relative bg-[#EAF3FF] pt-8 md:pt-14 pb-16 px-4 sm:px-6 lg:px-8 border-b border-[#D6E6FA] overflow-hidden">
       {/* Decorative math background subtle grid */}
@@ -37,8 +42,8 @@ export function HeroSection({ onCtaClick, onOpenImage }: HeroSectionProps) {
         </h1>
 
         {/* Subtitle */}
-        <p className="text-base sm:text-lg md:text-xl text-[#2C4160] max-w-2xl font-normal leading-relaxed mb-8">
-          Aprenda, revise e memorize as principais fórmulas de Matemática de maneira visual, simples e organizada. Tenha tudo o que precisa para estudar em um só lugar!
+        <p className="text-base sm:text-lg md:text-xl text-[#2C4160] max-w-3xl font-normal leading-relaxed mb-8">
+          {displaySubtitle}
         </p>
 
         {/* Product Digital Mockup Showcase */}

@@ -29,7 +29,16 @@ export default function App() {
     try {
       const saved = localStorage.getItem(CONFIG_STORAGE_KEY);
       if (saved) {
-        return JSON.parse(saved);
+        const parsed = JSON.parse(saved);
+        // Ensure new subtitle is adopted if user had an older version stored
+        if (
+          !parsed.heroSubtitle ||
+          parsed.heroSubtitle.includes('em um só lugar!') &&
+          !parsed.heroSubtitle.includes('Concursos Públicos')
+        ) {
+          parsed.heroSubtitle = DEFAULT_CONFIG.heroSubtitle;
+        }
+        return { ...DEFAULT_CONFIG, ...parsed };
       }
     } catch {
       // fallback
@@ -93,6 +102,7 @@ export default function App() {
         <HeroSection 
           onCtaClick={handleUniversalCta} 
           onOpenImage={handleOpenImage} 
+          subtitle={config.heroSubtitle}
         />
 
         {/* SEÇÃO 3 — VEJA O MATERIAL NA PRÁTICA */}

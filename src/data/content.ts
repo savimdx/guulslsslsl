@@ -15,7 +15,7 @@ export const DEFAULT_CONFIG: OfferConfig = {
   heroHeadlineHighlight: '+180 Mapas Mentais',
   heroHeadlineSuffix: 'de Fórmulas de Matemática do Ensino Médio',
   heroSubtitle:
-    'Aprenda, revise e memorize as principais fórmulas de Matemática de maneira visual, simples e organizada. Tenha tudo o que precisa para estudar em um só lugar!',
+    'Aprenda, revise e memorize as principais fórmulas de Matemática de maneira visual, simples e organizada. Tenha tudo o que precisa para estudar em um só lugar, serve para o Ensino Médio e para Concursos Públicos!',
   topBannerText: '⚡ OFERTA ESPECIAL DISPONÍVEL POR TEMPO LIMITADO!',
   bonuses: [
     {

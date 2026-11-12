@@ -189,6 +189,20 @@ export function ConfigDrawer({ isOpen, onClose, config, onSave }: ConfigDrawerPr
             />
           </div>
 
+          {/* Hero Subtitle */}
+          <div className="bg-slate-50 p-4 rounded-xl border border-slate-200">
+            <label className="block text-xs font-bold text-slate-700 mb-1 flex items-center gap-1.5">
+              <Tag className="w-3.5 h-3.5 text-[#1769D2]" />
+              Subtítulo do Hero
+            </label>
+            <textarea
+              rows={3}
+              value={formData.heroSubtitle}
+              onChange={(e) => handleChange('heroSubtitle', e.target.value)}
+              className="w-full text-xs px-3 py-2 border border-slate-300 rounded-lg focus:outline-hidden focus:ring-2 focus:ring-[#1769D2] bg-white"
+            />
+          </div>
+
           {/* Bonuses Configuration */}
           <div className="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-3">
             <h4 className="text-xs font-extrabold text-[#07152B] flex items-center gap-1.5 uppercase tracking-wider">
