@@ -1,4 +1,8 @@
 import { OfferConfig, MindMapSlide, TestimonialItem, FaqItem } from '../types';
+import bundleMockupImg from '../assets/images/math_bundle_mockup_1794489447248.jpg';
+import geomEspacialImg from '../assets/images/mindmap_geometria_espacial_1794489446735.jpg';
+import funcoesAlgebraImg from '../assets/images/mindmap_funcoes_algebra_1794489448790.jpg';
+import trigCicloImg from '../assets/images/mindmap_trigonometria_ciclo_1794489469307.jpg';
 
 export const DEFAULT_CONFIG: OfferConfig = {
   checkoutUrl: '', // Editable by user; defaults to modal preview
@@ -41,7 +45,7 @@ export const DEFAULT_CONFIG: OfferConfig = {
   ],
 };
 
-export const PRODUCT_BUNDLE_IMAGE = '/src/assets/images/math_bundle_mockup_1794489447248.jpg';
+export const PRODUCT_BUNDLE_IMAGE = bundleMockupImg;
 
 export const MATH_TOPICS_TAGS = [
   'Álgebra',
@@ -65,7 +69,7 @@ export const MINDMAP_SLIDES: MindMapSlide[] = [
     id: 'geo',
     title: 'Geometria Plana e Espacial',
     category: 'Geometria',
-    image: '/src/assets/images/mindmap_geometria_espacial_1794489446735.jpg',
+    image: geomEspacialImg,
     description:
       'Fórmulas essenciais de áreas (triângulos, círculos, trapézios) e volumes dos principais sólidos (prismas, cilindros, pirâmides, cones e esferas).',
     formulas: [
@@ -80,7 +84,7 @@ export const MINDMAP_SLIDES: MindMapSlide[] = [
     id: 'func',
     title: 'Funções do 1º e 2º Grau & Álgebra',
     category: 'Álgebra e Funções',
-    image: '/src/assets/images/mindmap_funcoes_algebra_1794489448790.jpg',
+    image: funcoesAlgebraImg,
     description:
       'Entenda visualmente gráficos de retas e parábolas, coeficientes angular e linear, raízes reais, fórmula de Bhaskara e coordenadas do vértice.',
     formulas: [
@@ -95,7 +99,7 @@ export const MINDMAP_SLIDES: MindMapSlide[] = [
     id: 'trig',
     title: 'Trigonometria e Ciclo Trigonométrico',
     category: 'Trigonometria',
-    image: '/src/assets/images/mindmap_trigonometria_ciclo_1794489469307.jpg',
+    image: trigCicloImg,
     description:
       'O ciclo trigonométrico completo com ângulos notáveis (30°, 45°, 60°), sinais nos quatro quadrantes, relação fundamental, lei dos senos e lei dos cossenos.',
     formulas: [
