@@ -1,22 +1,18 @@
 import { OfferConfig, MindMapSlide, TestimonialItem, FaqItem } from '../types';
-import bundleMockupImg from '../assets/images/math_bundle_mockup_1794489447248.jpg';
-import geomEspacialImg from '../assets/images/mindmap_geometria_espacial_1794489446735.jpg';
-import funcoesAlgebraImg from '../assets/images/mindmap_funcoes_algebra_1794489448790.jpg';
-import trigCicloImg from '../assets/images/mindmap_trigonometria_ciclo_1794489469307.jpg';
 
 export const DEFAULT_CONFIG: OfferConfig = {
   checkoutUrl: '', // Editable by user; defaults to modal preview
   originalPrice: 'R$ 97,00',
-  promoPrice: '19,90',
-  installments: 'ou 2x de R$ 10,40 no cartão',
-  savingsText: 'Você economiza R$ 77,10 hoje',
+  promoPrice: '10,00',
+  installments: 'ou 2x de R$ 5,20 no cartão',
+  savingsText: 'Você economiza R$ 87,00 hoje',
   guaranteeDays: 7,
   productTitle: '+180 Mapas Mentais de Fórmulas de Matemática para Ensino Médio e Concursos Públicos',
   heroHeadlineHighlight: '+180 Mapas Mentais',
   heroHeadlineSuffix: 'de Fórmulas de Matemática para Ensino Médio e Concursos Públicos',
   heroSubtitle:
     'Aprenda, revise e memorize as principais fórmulas de Matemática de maneira visual, simples e organizada. Tenha tudo o que precisa para estudar em um só lugar, serve para o Ensino Médio e para Concursos Públicos!',
-  topBannerText: '⚡ OFERTA ESPECIAL DISPONÍVEL POR TEMPO LIMITADO!',
+  topBannerText: 'OFERTA DISPONÍVEL POR TEMPO LIMITADO',
   bonuses: [
     {
       id: 'b1',
@@ -45,76 +41,121 @@ export const DEFAULT_CONFIG: OfferConfig = {
   ],
 };
 
-export const PRODUCT_BUNDLE_IMAGE = bundleMockupImg;
+export const PRODUCT_BUNDLE_IMAGE = 'https://i.ibb.co/h1ckyhLx/180-Mapas-Mentais-de-Matem-tica-1.png';
 
 export const MATH_TOPICS_TAGS = [
-  'Álgebra',
-  'Geometria Plana',
-  'Geometria Espacial',
-  'Trigonometria',
-  'Ciclo Trigonométrico',
-  'Funções do 1º e 2º Grau',
-  'Função Exponencial & Logaritmos',
-  'Progressão Aritmética (PA)',
-  'Progressão Geométrica (PG)',
-  'Estatística & Médias',
-  'Probabilidade',
-  'Porcentagem & Matemática Financeira',
-  'Análise Combinatória',
-  'Matrizes & Determinantes',
+  'Produtos notáveis',
+  'Equações de 2º grau',
+  'Teorema de Pitágoras',
+  'Circunferência e círculo',
+  'Seno, cosseno e tangente',
+  'Relações trigonométricas',
+  'Função afim',
+  'Função exponencial',
+  'Progressão aritmética (PA)',
+  'Progressão geométrica (PG)',
+  'Porcentagem',
+  'Regra de três composta',
+  'Determinantes',
+  'Sistemas lineares',
   'E muito mais...',
 ];
 
 export const MINDMAP_SLIDES: MindMapSlide[] = [
   {
-    id: 'geo',
-    title: 'Geometria Plana e Espacial',
+    id: 'areas-figuras-planas',
+    title: 'Áreas das Figuras Planas',
+    category: 'Geometria Plana',
+    image: 'https://i.ibb.co/ynY58f5Q/reas-das-Figuras-Planas.png',
+    description: 'Fórmulas visuais de áreas das figuras planas.',
+    formulas: [],
+    keyTopics: [],
+  },
+  {
+    id: 'funcao-exponencial',
+    title: 'Função Exponencial — Guia Visual Completo',
+    category: 'Funções',
+    image: 'https://i.ibb.co/vCSBp6DH/Fun-o-Exponencial-Guia-Visual-Completo.png',
+    description: 'Guia visual completo de função exponencial.',
+    formulas: [],
+    keyTopics: [],
+  },
+  {
+    id: 'semelhanca-triangulos',
+    title: 'Guia Colorido da Semelhança de Triângulos',
     category: 'Geometria',
-    image: geomEspacialImg,
-    description:
-      'Fórmulas essenciais de áreas (triângulos, círculos, trapézios) e volumes dos principais sólidos (prismas, cilindros, pirâmides, cones e esferas).',
-    formulas: [
-      'Teorema de Pitágoras: a² + b² = c²',
-      'Área do Círculo: A = π · r²',
-      'Volume do Cilindro: V = π · r² · h',
-      'Volume da Esfera: V = 4/3 · π · r³',
-    ],
-    keyTopics: ['Triângulos', 'Quadriláteros', 'Círculos', 'Prismas', 'Cilindros', 'Cones', 'Esferas'],
+    image: 'https://i.ibb.co/mV1kvRdC/Guia-Colorido-da-Semelhan-a-de-Tri-ngulos.png',
+    description: 'Semelhança de triângulos em formato visual.',
+    formulas: [],
+    keyTopics: [],
   },
   {
-    id: 'func',
-    title: 'Funções do 1º e 2º Grau & Álgebra',
-    category: 'Álgebra e Funções',
-    image: funcoesAlgebraImg,
-    description:
-      'Entenda visualmente gráficos de retas e parábolas, coeficientes angular e linear, raízes reais, fórmula de Bhaskara e coordenadas do vértice.',
-    formulas: [
-      'Função Afim: f(x) = ax + b',
-      'Bhaskara: x = (-b ± √Δ) / 2a',
-      'Discriminante: Δ = b² - 4ac',
-      'Vértice: Xv = -b/2a  |  Yv = -Δ/4a',
-    ],
-    keyTopics: ['Coeficiente Angular', 'Interseção no eixo y', 'Concavidade', 'Ponto Máximo/Mínimo'],
+    id: 'combinatoria-matematica',
+    title: 'Guia Visual de Combinatória Matemática',
+    category: 'Combinatória',
+    image: 'https://i.ibb.co/dH8jybv/Guia-Visual-de-Combinat-ria-Matem-tica.png',
+    description: 'Guia visual de análise combinatória.',
+    formulas: [],
+    keyTopics: [],
   },
   {
-    id: 'trig',
-    title: 'Trigonometria e Ciclo Trigonométrico',
+    id: 'geometria-analitica',
+    title: 'Guia Visual de Geometria Analítica',
+    category: 'Geometria Analítica',
+    image: 'https://i.ibb.co/Jw0LZCyd/Guia-Visual-de-Geometria-Anal-tica.png',
+    description: 'Guia visual de geometria analítica.',
+    formulas: [],
+    keyTopics: [],
+  },
+  {
+    id: 'relacoes-trigonometricas',
+    title: 'Guia Visual de Relações Trigonométricas',
     category: 'Trigonometria',
-    image: trigCicloImg,
-    description:
-      'O ciclo trigonométrico completo com ângulos notáveis (30°, 45°, 60°), sinais nos quatro quadrantes, relação fundamental, lei dos senos e lei dos cossenos.',
-    formulas: [
-      'Relação Fundamental: sen²θ + cos²θ = 1',
-      'Tangente: tg θ = sen θ / cos θ',
-      'Lei dos Senos: a/sen(A) = b/sen(B) = 2R',
-      'Lei dos Cossenos: a² = b² + c² - 2bc·cos(A)',
-    ],
-    keyTopics: ['Eixo Seno e Cosseno', 'Radianos e Graus', 'Ângulos Notáveis', 'Gráficos Senoide'],
+    image: 'https://i.ibb.co/k2gwnSbh/Guia-Visual-de-Rela-es-Trigonom-tricas.png',
+    description: 'Guia visual de relações trigonométricas.',
+    formulas: [],
+    keyTopics: [],
+  },
+  {
+    id: 'lei-dos-cossenos',
+    title: 'Infográfico Colorido da Lei dos Cossenos',
+    category: 'Trigonometria',
+    image: 'https://i.ibb.co/7xvrQ8Qq/Infogr-fico-Colorido-da-Lei-dos-Cossenos.png',
+    description: 'Infográfico colorido da Lei dos Cossenos.',
+    formulas: [],
+    keyTopics: [],
+  },
+  {
+    id: 'lei-dos-senos',
+    title: 'Infográfico Colorido da Lei dos Senos',
+    category: 'Trigonometria',
+    image: 'https://i.ibb.co/4Rt17bHM/Infogr-fico-colorido-da-Lei-dos-Senos.png',
+    description: 'Infográfico colorido da Lei dos Senos.',
+    formulas: [],
+    keyTopics: [],
+  },
+  {
+    id: 'analise-combinatoria',
+    title: 'Infográfico Colorido de Análise Combinatória',
+    category: 'Combinatória',
+    image: 'https://i.ibb.co/ccrsxMP5/Infogr-fico-Colorido-de-An-lise-Combinat-ria.png',
+    description: 'Infográfico colorido de análise combinatória.',
+    formulas: [],
+    keyTopics: [],
+  },
+  {
+    id: 'areas-e-volumes',
+    title: 'Infográfico Colorido de Áreas e Volumes',
+    category: 'Geometria Espacial',
+    image: 'https://i.ibb.co/NdghK3d4/Infogr-fico-Colorido-de-reas-e-Volumes.png',
+    description: 'Infográfico colorido de áreas e volumes.',
+    formulas: [],
+    keyTopics: [],
   },
 ];
 
 export const WHAT_YOU_RECEIVE_ITEMS = [
-  { text: 'Mais de 180 mapas mentais de Matemática', detail: 'Cobre todo o conteúdo do Ensino Médio e Concursos Públicos' },
+  { text: 'Mais de 180 Mapas Mentais de Fórmulas de Matemática', detail: 'Cobre todo o conteúdo do Ensino Médio e Concursos Públicos' },
   { text: 'Fórmulas organizadas por assunto', detail: 'Fácil localização em segundos sem perder tempo' },
   { text: 'Conteúdo do Ensino Médio e Concursos Públicos', detail: 'Foco total em provas, vestibulares (ENEM) e concursos públicos' },
   { text: 'Material de fácil consulta', detail: 'Diagramação limpa em alta definição para celular e PC' },

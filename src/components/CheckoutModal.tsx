@@ -167,7 +167,7 @@ export function CheckoutModal({
 
                 <button
                   type="submit"
-                  className="w-full py-3.5 bg-[#FF9500] hover:bg-[#E08500] text-white font-extrabold text-base rounded-xl transition-all shadow-md cursor-pointer flex items-center justify-center gap-2 uppercase tracking-wide"
+                  className="w-full py-3.5 bg-[#16A34A] hover:bg-[#15803D] text-white font-extrabold text-base rounded-xl transition-all shadow-md cursor-pointer flex items-center justify-center gap-2 uppercase tracking-wide"
                 >
                   <CreditCard className="w-5 h-5" />
                   <span>Finalizar Pagamento de Teste</span>

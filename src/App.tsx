@@ -44,6 +44,17 @@ export default function App() {
         ) {
           parsed.productTitle = DEFAULT_CONFIG.productTitle;
         }
+        if (
+          !parsed.topBannerText ||
+          parsed.topBannerText.includes('⚡') ||
+          parsed.topBannerText.includes('OFERTA ESPECIAL')
+        ) {
+          parsed.topBannerText = DEFAULT_CONFIG.topBannerText;
+        }
+        if (!parsed.promoPrice || parsed.promoPrice === '19,90') {
+          parsed.promoPrice = DEFAULT_CONFIG.promoPrice;
+          parsed.savingsText = DEFAULT_CONFIG.savingsText;
+        }
         return { ...DEFAULT_CONFIG, ...parsed };
       }
     } catch {

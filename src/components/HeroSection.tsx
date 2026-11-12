@@ -1,13 +1,15 @@
 import { ShieldCheck, BookOpen, Smartphone, FolderTree, Eye, Clock } from 'lucide-react';
-import { PRODUCT_BUNDLE_IMAGE, MATH_TOPICS_TAGS } from '../data/content';
+import { MATH_TOPICS_TAGS } from '../data/content';
+
+const HERO_BUNDLE_IMAGE = 'https://i.ibb.co/h1ckyhLx/180-Mapas-Mentais-de-Matem-tica-1.png';
 
 interface HeroSectionProps {
   onCtaClick?: () => void;
-  onOpenImage: (imageSrc: string, title: string) => void;
+  onOpenImage?: (imageSrc: string, title: string) => void;
   subtitle?: string;
 }
 
-export function HeroSection({ onOpenImage, subtitle }: HeroSectionProps) {
+export function HeroSection({ subtitle }: HeroSectionProps) {
   const displaySubtitle =
     subtitle ||
     'Aprenda, revise e memorize as principais fórmulas de Matemática de maneira visual, simples e organizada. Tenha tudo o que precisa para estudar em um só lugar, serve para o Ensino Médio e para Concursos Públicos!';
@@ -47,13 +49,13 @@ export function HeroSection({ onOpenImage, subtitle }: HeroSectionProps) {
         </p>
 
         {/* Product Digital Mockup Showcase */}
-        <div className="relative w-full max-w-3xl my-2 group">
-          <div className="relative mx-auto rounded-2xl overflow-hidden shadow-2xl bg-white border border-[#D0E2FA] transition-transform duration-300 hover:scale-[1.01]">
+        <div className="relative w-full max-w-3xl my-2">
+          <div className="relative mx-auto rounded-2xl overflow-hidden shadow-2xl bg-white border border-[#D0E2FA]">
             <img
-              src={PRODUCT_BUNDLE_IMAGE}
+              src={HERO_BUNDLE_IMAGE}
               alt="Mockup do material de +180 Mapas Mentais de Fórmulas de Matemática para Ensino Médio e Concursos Públicos"
-              className="w-full h-auto object-cover cursor-pointer"
-              onClick={() => onOpenImage(PRODUCT_BUNDLE_IMAGE, "Apostila Digital + Caderno de Mapas Mentais de Matemática")}
+              referrerPolicy="no-referrer"
+              className="w-full h-auto object-cover"
             />
           </div>
         </div>
@@ -61,24 +63,39 @@ export function HeroSection({ onOpenImage, subtitle }: HeroSectionProps) {
         {/* Social Proof Row: Avatars & Counter */}
         <div className="mt-7 flex flex-wrap items-center justify-center gap-3 text-xs sm:text-sm text-slate-700 bg-white/70 px-4 py-2 rounded-full border border-[#D5E5F9]">
           <div className="flex -space-x-2 overflow-hidden">
-            <span className="inline-block h-7 w-7 rounded-full ring-2 ring-white bg-[#1769D2] text-white text-[11px] font-bold flex items-center justify-center">
-              AO
-            </span>
-            <span className="inline-block h-7 w-7 rounded-full ring-2 ring-white bg-emerald-600 text-white text-[11px] font-bold flex items-center justify-center">
-              LF
-            </span>
-            <span className="inline-block h-7 w-7 rounded-full ring-2 ring-white bg-[#FF9500] text-white text-[11px] font-bold flex items-center justify-center">
-              BS
-            </span>
-            <span className="inline-block h-7 w-7 rounded-full ring-2 ring-white bg-purple-600 text-white text-[11px] font-bold flex items-center justify-center">
-              MR
-            </span>
-            <span className="inline-block h-7 w-7 rounded-full ring-2 ring-white bg-slate-800 text-white text-[10px] font-bold flex items-center justify-center">
-              +3k
-            </span>
+            <img
+              src="https://i.ibb.co/jkqGT5m0/ffff.jpg"
+              alt="Foto de perfil de aluno 1"
+              referrerPolicy="no-referrer"
+              className="inline-block h-7 w-7 rounded-full ring-2 ring-white object-cover bg-slate-200"
+            />
+            <img
+              src="https://i.ibb.co/LzF2Sc02/dddd.jpg"
+              alt="Foto de perfil de aluno 2"
+              referrerPolicy="no-referrer"
+              className="inline-block h-7 w-7 rounded-full ring-2 ring-white object-cover bg-slate-200"
+            />
+            <img
+              src="https://i.ibb.co/bfNgMZv/images.jpg"
+              alt="Foto de perfil de aluno 3"
+              referrerPolicy="no-referrer"
+              className="inline-block h-7 w-7 rounded-full ring-2 ring-white object-cover bg-slate-200"
+            />
+            <img
+              src="https://i.ibb.co/9m9bXJsv/aaaa.jpg"
+              alt="Foto de perfil de aluno 4"
+              referrerPolicy="no-referrer"
+              className="inline-block h-7 w-7 rounded-full ring-2 ring-white object-cover bg-slate-200"
+            />
+            <img
+              src="https://i.ibb.co/M5QvNJH0/aaa.jpg"
+              alt="Foto de perfil de aluno 5"
+              referrerPolicy="no-referrer"
+              className="inline-block h-7 w-7 rounded-full ring-2 ring-white object-cover bg-slate-200"
+            />
           </div>
           <span className="font-semibold text-[#07152B] flex items-center gap-1">
-            ⭐ + de 3.400 alunos aprendendo
+            + de 3.400 alunos aprendendo
           </span>
         </div>
 

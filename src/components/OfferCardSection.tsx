@@ -1,14 +1,14 @@
-import { Check, ShieldCheck, Gift, Zap, Lock } from 'lucide-react';
+import { Check, Gift, Lock } from 'lucide-react';
 import { OfferConfig } from '../types';
 import { PRODUCT_BUNDLE_IMAGE } from '../data/content';
 
 interface OfferCardSectionProps {
   config: OfferConfig;
   onCtaClick: () => void;
-  onOpenImage: (imageSrc: string, title: string) => void;
+  onOpenImage?: (imageSrc: string, title: string) => void;
 }
 
-export function OfferCardSection({ config, onCtaClick, onOpenImage }: OfferCardSectionProps) {
+export function OfferCardSection({ config, onCtaClick }: OfferCardSectionProps) {
   return (
     <section id="oferta" className="bg-[#F5F7FA] py-16 md:py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-2xl mx-auto">
@@ -16,8 +16,7 @@ export function OfferCardSection({ config, onCtaClick, onOpenImage }: OfferCardS
         <div className="bg-white rounded-3xl border-2 border-[#FF9500] shadow-xl overflow-hidden transition-all duration-300 relative">
           
           {/* Top Urgency Header Badge */}
-          <div className="bg-[#E53935] text-white py-2.5 px-4 text-center text-xs sm:text-sm font-extrabold tracking-wider flex items-center justify-center gap-1.5 uppercase">
-            <Zap className="w-4 h-4 fill-white" />
+          <div className="bg-[#E53935] text-white py-2.5 px-4 text-center text-xs sm:text-sm font-extrabold tracking-wider flex items-center justify-center uppercase">
             <span>🔥 OFERTA ESPECIAL — APROVEITE HOJE</span>
           </div>
 
@@ -28,12 +27,12 @@ export function OfferCardSection({ config, onCtaClick, onOpenImage }: OfferCardS
             </h3>
 
             {/* Product Mockup Image */}
-            <div className="relative rounded-2xl overflow-hidden border border-slate-200 shadow-md mb-8 group cursor-pointer">
+            <div className="relative rounded-2xl overflow-hidden border border-slate-200 shadow-md mb-8">
               <img
                 src={PRODUCT_BUNDLE_IMAGE}
                 alt={config.productTitle}
-                className="w-full h-auto object-cover group-hover:scale-[1.02] transition-transform duration-300"
-                onClick={() => onOpenImage(PRODUCT_BUNDLE_IMAGE, config.productTitle)}
+                referrerPolicy="no-referrer"
+                className="w-full h-auto object-cover"
               />
             </div>
 
@@ -43,7 +42,7 @@ export function OfferCardSection({ config, onCtaClick, onOpenImage }: OfferCardS
                 <div className="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0">
                   <Check className="w-3.5 h-3.5 stroke-[3]" />
                 </div>
-                <span className="font-semibold">+180 mapas mentais de Matemática</span>
+                <span className="font-semibold">+180 Mapas Mentais de Fórmulas de Matemática para Ensino Médio e Concursos Públicos</span>
               </div>
               <div className="flex items-center gap-2.5">
                 <div className="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0">
@@ -97,26 +96,20 @@ export function OfferCardSection({ config, onCtaClick, onOpenImage }: OfferCardS
             {/* Price Box */}
             <div className="py-6 border-t border-b border-slate-100 mb-6">
               {config.originalPrice && (
-                <div className="text-sm text-slate-400 line-through font-medium">
+                <div className="text-base text-red-600 line-through font-semibold">
                   de {config.originalPrice}
                 </div>
               )}
 
-              <div className="flex items-baseline justify-center gap-1.5 mt-1 text-[#07152B]">
-                <span className="text-2xl font-bold text-[#FF9500]">R$</span>
-                <span className="text-5xl sm:text-6xl font-black tracking-tight text-[#FF9500]">
+              <div className="flex items-baseline justify-center gap-2 mt-2 text-[#07152B]">
+                <span className="text-6xl sm:text-7xl md:text-8xl font-black tracking-tight leading-none text-[#FF9500]">R$</span>
+                <span className="text-6xl sm:text-7xl md:text-8xl font-black tracking-tight leading-none text-[#FF9500]">
                   {config.promoPrice}
                 </span>
               </div>
 
-              {config.installments && (
-                <div className="text-xs sm:text-sm font-semibold text-slate-600 mt-1">
-                  {config.installments}
-                </div>
-              )}
-
               {config.savingsText && (
-                <div className="inline-block mt-2 bg-emerald-50 text-emerald-700 font-bold text-xs px-3 py-1 rounded-full border border-emerald-200">
+                <div className="inline-block mt-3 bg-emerald-50 text-emerald-700 font-bold text-xs px-3 py-1 rounded-full border border-emerald-200">
                   {config.savingsText}
                 </div>
               )}
@@ -125,7 +118,7 @@ export function OfferCardSection({ config, onCtaClick, onOpenImage }: OfferCardS
             {/* Primary Purchase Button */}
             <button
               onClick={onCtaClick}
-              className="w-full py-4 px-6 bg-[#FF9500] hover:bg-[#E08500] active:scale-[0.99] text-white font-black text-lg sm:text-xl rounded-xl shadow-lg hover:shadow-orange-500/30 transition-all duration-200 uppercase tracking-wide cursor-pointer flex items-center justify-center gap-2"
+              className="w-full py-4 px-6 bg-[#16A34A] hover:bg-[#15803D] active:scale-[0.99] text-white font-black text-lg sm:text-xl rounded-xl shadow-lg hover:shadow-green-500/30 transition-all duration-200 uppercase tracking-wide cursor-pointer flex items-center justify-center gap-2"
             >
               <span>QUERO COMPRAR AGORA</span>
             </button>
