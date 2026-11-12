@@ -130,7 +130,7 @@ export function HeroSection({ subtitle }: HeroSectionProps) {
             </div>
             <div>
               <h4 className="text-xs sm:text-sm font-bold text-[#07152B]">Material organizado</h4>
-              <p className="text-[11px] sm:text-xs text-slate-600 mt-0.5">Fórmulas por cada conteúdo</p>
+              <p className="text-[11px] sm:text-xs text-slate-600 mt-0.5">Fórmulas para cada assunto</p>
             </div>
           </div>
 
