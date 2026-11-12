@@ -1,0 +1,6 @@
+{
+  "name": "Mapas Mentais de Matemática - Ensino Médio",
+  "description": "+180 Mapas Mentais de Fórmulas de Matemática do Ensino Médio. Resumos visuais, simples e organizados para aprender, revisar e memorizar.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

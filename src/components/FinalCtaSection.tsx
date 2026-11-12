@@ -1,0 +1,67 @@
+import { ArrowRight, Lock, BookOpen } from 'lucide-react';
+
+interface FinalCtaSectionProps {
+  onCtaClick: () => void;
+  promoPrice: string;
+}
+
+export function FinalCtaSection({ onCtaClick, promoPrice }: FinalCtaSectionProps) {
+  return (
+    <footer className="bg-[#07152B] text-white pt-16 md:pt-20 pb-12 px-4 sm:px-6 lg:px-8 border-t border-slate-800">
+      <div className="max-w-3xl mx-auto text-center">
+        {/* Main Final CTA Callout */}
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-black tracking-tight leading-snug mb-4">
+          Comece a estudar <span className="text-[#FF9500]">Matemática</span> de um jeito mais organizado!
+        </h2>
+
+        <p className="text-slate-300 text-sm sm:text-base max-w-xl mx-auto font-light mb-8">
+          Tenha todas as fórmulas do Ensino Médio sempre à mão. Estude com mais foco, rapidez e segurança para suas provas e vestibulares.
+        </p>
+
+        {/* CTA Button */}
+        <div className="max-w-md mx-auto mb-12">
+          <button
+            onClick={onCtaClick}
+            className="w-full py-4 px-8 bg-[#FF9500] hover:bg-[#E08500] active:scale-[0.99] text-white font-extrabold text-lg sm:text-xl rounded-xl shadow-xl hover:shadow-orange-500/20 transition-all duration-200 uppercase tracking-wide cursor-pointer flex items-center justify-center gap-2"
+          >
+            <span>QUERO GARANTIR POR R${promoPrice}</span>
+            <ArrowRight className="w-5 h-5" />
+          </button>
+
+          <p className="text-xs text-slate-400 mt-2.5 flex items-center justify-center gap-1.5">
+            <Lock className="w-3.5 h-3.5 text-emerald-400" />
+            <span>Acesso imediato e 7 dias de garantia incondicional</span>
+          </p>
+        </div>
+
+        {/* Simple Footer Links & Legal */}
+        <div className="border-t border-slate-800/80 pt-8 text-center text-xs text-slate-400 space-y-4">
+          <div className="flex items-center justify-center gap-2 text-slate-300 font-bold text-sm">
+            <BookOpen className="w-4 h-4 text-[#FF9500]" />
+            <span>+180 Mapas Mentais de Fórmulas de Matemática do Ensino Médio</span>
+          </div>
+
+          <div className="flex flex-wrap justify-center gap-4 text-slate-400">
+            <a href="#termos" className="hover:text-white transition-colors">
+              Termos de Uso
+            </a>
+            <span>•</span>
+            <a href="#privacidade" className="hover:text-white transition-colors">
+              Política de Privacidade
+            </a>
+            <span>•</span>
+            <a href="#contato" className="hover:text-white transition-colors">
+              Contato & Suporte
+            </a>
+          </div>
+
+          <p className="text-[11px] text-slate-400 leading-relaxed max-w-xl mx-auto">
+            © {new Date().getFullYear()} Mapas Mentais de Matemática. Todos os direitos reservados.
+            <br />
+            Este produto é um material educacional independente desenvolvido para fins didáticos e de revisão para estudantes do Ensino Médio.
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+}
