@@ -11,9 +11,9 @@ export const DEFAULT_CONFIG: OfferConfig = {
   installments: 'ou 2x de R$ 10,40 no cartão',
   savingsText: 'Você economiza R$ 77,10 hoje',
   guaranteeDays: 7,
-  productTitle: 'Mapas Mentais de Fórmulas de Matemática — Ensino Médio e Concursos Públicos',
+  productTitle: '+180 Mapas Mentais de Fórmulas de Matemática para Ensino Médio e Concursos Públicos',
   heroHeadlineHighlight: '+180 Mapas Mentais',
-  heroHeadlineSuffix: 'de Fórmulas de Matemática do Ensino Médio e Concursos Públicos',
+  heroHeadlineSuffix: 'de Fórmulas de Matemática para Ensino Médio e Concursos Públicos',
   heroSubtitle:
     'Aprenda, revise e memorize as principais fórmulas de Matemática de maneira visual, simples e organizada. Tenha tudo o que precisa para estudar em um só lugar, serve para o Ensino Médio e para Concursos Públicos!',
   topBannerText: '⚡ OFERTA ESPECIAL DISPONÍVEL POR TEMPO LIMITADO!',
@@ -62,6 +62,7 @@ export const MATH_TOPICS_TAGS = [
   'Porcentagem & Matemática Financeira',
   'Análise Combinatória',
   'Matrizes & Determinantes',
+  'E muito mais...',
 ];
 
 export const MINDMAP_SLIDES: MindMapSlide[] = [
@@ -113,14 +114,11 @@ export const MINDMAP_SLIDES: MindMapSlide[] = [
 ];
 
 export const WHAT_YOU_RECEIVE_ITEMS = [
-  { text: 'Mais de 180 mapas mentais de Matemática', detail: 'Cobre absolutamente todo o currículo do Ensino Médio' },
+  { text: 'Mais de 180 mapas mentais de Matemática', detail: 'Cobre todo o conteúdo do Ensino Médio e Concursos Públicos' },
   { text: 'Fórmulas organizadas por assunto', detail: 'Fácil localização em segundos sem perder tempo' },
   { text: 'Conteúdo do Ensino Médio e Concursos Públicos', detail: 'Foco total em provas, vestibulares (ENEM) e concursos públicos' },
-  { text: 'Resumos visuais e objetivos', detail: 'Sem enrolação teórica: direto ao ponto e com esquemas' },
   { text: 'Material de fácil consulta', detail: 'Diagramação limpa em alta definição para celular e PC' },
   { text: 'Ideal para revisão e estudos', detail: 'Acelera a fixação antes de provas e simulados' },
-  { text: 'Acesso digital imediato', detail: 'Receba seus links de download no mesmo minuto por e-mail' },
-  { text: 'Consulte quando quiser', detail: 'Arquivo PDF perpétuo no seu dispositivo ou impresso' },
 ];
 
 export const TRUST_FEATURES = [
@@ -173,7 +171,7 @@ export const TESTIMONIALS_DATA: TestimonialItem[] = [
     chatMessages: [
       { sender: 'support', text: 'Fala Lucas! O material atendeu o que você precisava para as exatas?', time: '18:38' },
       { sender: 'student', text: 'Cara, muito acima do que eu esperava. A parte de PA, PG e análise combinatória é surreal de clara.', time: '18:40' },
-      { sender: 'student', text: 'Eu perdia um tempão procurando fórmula em caderno velho e apostila gigante. Com o PDF no tablet vou direto no ponto.', time: '18:41' },
+      { sender: 'student', text: 'Eu perdia um tempão procurando fórmula em caderno velho e apostila gigante. Com o material no tablet vou direto no ponto.', time: '18:41' },
       { sender: 'student', text: 'Valeu cada centavo, super recomendo pra quem tá focado em passar!', time: '18:42' },
     ],
   },
@@ -195,7 +193,7 @@ export const FAQ_DATA: FaqItem[] = [
   {
     question: 'Como vou receber o material?',
     answer:
-      'O acesso será disponibilizado digitalmente após a confirmação do pagamento. Você receberá um e-mail com os links de acesso imediato para download dos arquivos em PDF de alta qualidade.',
+      'O acesso será disponibilizado digitalmente após a confirmação do pagamento. Você receberá um e-mail com os links de acesso imediato ao material digital de alta qualidade.',
   },
   {
     question: 'O material é digital?',
@@ -205,12 +203,12 @@ export const FAQ_DATA: FaqItem[] = [
   {
     question: 'Para qual nível de ensino é indicado?',
     answer:
-      'O conteúdo é direcionado aos estudantes do Ensino Médio (1º, 2º e 3º ano), vestibulandos (ENEM, Fuvest, Unicamp e vestibulares regionais) e qualquer pessoa que precise revisar as fórmulas fundamentais de matemática.',
+      'O conteúdo é direcionado aos estudantes do Ensino Médio (1º, 2º e 3º ano), vestibulandos (ENEM, Fuvest, Unicamp e vestibulares regionais), concurseiros e qualquer pessoa que precise revisar as fórmulas fundamentais de matemática.',
   },
   {
     question: 'Posso acessar pelo celular?',
     answer:
-      'Sim! O material está em formato PDF padrão universal, compatível com qualquer celular (Android ou iPhone), tablet, iPad, notebook ou computador de mesa.',
+      'Sim! O material está em formato digital padrão universal, compatível com qualquer celular (Android ou iPhone), tablet, iPad, notebook ou computador de mesa.',
   },
   {
     question: 'Tem garantia?',

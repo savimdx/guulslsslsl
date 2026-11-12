@@ -63,6 +63,12 @@ export function OfferCardSection({ config, onCtaClick, onOpenImage }: OfferCardS
                 </div>
                 <span>Material visual e de fácil consulta</span>
               </div>
+              <div className="flex items-center gap-2.5">
+                <div className="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0">
+                  <Check className="w-3.5 h-3.5 stroke-[3]" />
+                </div>
+                <span>Acesso Vitalício</span>
+              </div>
             </div>
 
             {/* Bonus Items Area */}

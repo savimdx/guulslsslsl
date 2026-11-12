@@ -39,7 +39,8 @@ export default function App() {
         }
         if (
           !parsed.productTitle ||
-          !parsed.productTitle.includes('Concursos Públicos')
+          !parsed.productTitle.includes('para Ensino Médio e Concursos Públicos') ||
+          !parsed.productTitle.includes('+180')
         ) {
           parsed.productTitle = DEFAULT_CONFIG.productTitle;
         }

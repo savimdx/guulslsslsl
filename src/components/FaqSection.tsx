@@ -9,8 +9,8 @@ interface FaqSectionProps {
 
 export function FaqSection({ customFaq }: FaqSectionProps) {
   const faqs = customFaq || FAQ_DATA;
-  // First item open by default for immediate clarity
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
+  // Start all FAQ items collapsed on page load
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const toggleFaq = (index: number) => {
     setOpenIndex((prev) => (prev === index ? null : index));

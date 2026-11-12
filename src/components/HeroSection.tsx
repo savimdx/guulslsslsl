@@ -1,13 +1,13 @@
-import { CheckCircle2, ShieldCheck, Sparkles, BookOpen, Smartphone, FolderTree, Eye, Clock } from 'lucide-react';
+import { ShieldCheck, BookOpen, Smartphone, FolderTree, Eye, Clock } from 'lucide-react';
 import { PRODUCT_BUNDLE_IMAGE, MATH_TOPICS_TAGS } from '../data/content';
 
 interface HeroSectionProps {
-  onCtaClick: () => void;
+  onCtaClick?: () => void;
   onOpenImage: (imageSrc: string, title: string) => void;
   subtitle?: string;
 }
 
-export function HeroSection({ onCtaClick, onOpenImage, subtitle }: HeroSectionProps) {
+export function HeroSection({ onOpenImage, subtitle }: HeroSectionProps) {
   const displaySubtitle =
     subtitle ||
     'Aprenda, revise e memorize as principais fórmulas de Matemática de maneira visual, simples e organizada. Tenha tudo o que precisa para estudar em um só lugar, serve para o Ensino Médio e para Concursos Públicos!';
@@ -38,7 +38,7 @@ export function HeroSection({ onCtaClick, onOpenImage, subtitle }: HeroSectionPr
         {/* Main Headline */}
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[50px] font-extrabold text-[#07152B] tracking-tight leading-[1.15] mb-5 max-w-4xl">
           <span className="text-[#FF9500] drop-shadow-xs">+180 Mapas Mentais</span>{' '}
-          de Fórmulas de Matemática do Ensino Médio e Concursos Públicos
+          de Fórmulas de Matemática para Ensino Médio e Concursos Públicos
         </h1>
 
         {/* Subtitle */}
@@ -51,25 +51,10 @@ export function HeroSection({ onCtaClick, onOpenImage, subtitle }: HeroSectionPr
           <div className="relative mx-auto rounded-2xl overflow-hidden shadow-2xl bg-white border border-[#D0E2FA] transition-transform duration-300 hover:scale-[1.01]">
             <img
               src={PRODUCT_BUNDLE_IMAGE}
-              alt="Mockup do material de Mapas Mentais de Matemática do Ensino Médio"
+              alt="Mockup do material de +180 Mapas Mentais de Fórmulas de Matemática para Ensino Médio e Concursos Públicos"
               className="w-full h-auto object-cover cursor-pointer"
               onClick={() => onOpenImage(PRODUCT_BUNDLE_IMAGE, "Apostila Digital + Caderno de Mapas Mentais de Matemática")}
             />
-          </div>
-        </div>
-
-        {/* CTA Button Block */}
-        <div className="mt-8 flex flex-col items-center w-full max-w-md">
-          <button
-            onClick={onCtaClick}
-            className="w-full py-4 px-8 bg-[#FF9500] hover:bg-[#E08500] active:scale-[0.99] text-white font-extrabold text-lg sm:text-xl rounded-xl shadow-lg hover:shadow-orange-500/25 transition-all duration-200 tracking-wide flex items-center justify-center gap-2 cursor-pointer uppercase"
-          >
-            <span>QUERO ACESSAR AGORA</span>
-          </button>
-          
-          <div className="mt-3 flex items-center justify-center gap-1.5 text-xs sm:text-sm font-medium text-[#2C4160]">
-            <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0" />
-            <span>Acesso imediato após a confirmação do pagamento.</span>
           </div>
         </div>
 
@@ -128,7 +113,7 @@ export function HeroSection({ onCtaClick, onOpenImage, subtitle }: HeroSectionPr
             </div>
             <div>
               <h4 className="text-xs sm:text-sm font-bold text-[#07152B]">Material organizado</h4>
-              <p className="text-[11px] sm:text-xs text-slate-600 mt-0.5">Fórmulas por disciplina</p>
+              <p className="text-[11px] sm:text-xs text-slate-600 mt-0.5">Fórmulas por cada conteúdo</p>
             </div>
           </div>
 

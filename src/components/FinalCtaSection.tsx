@@ -15,7 +15,7 @@ export function FinalCtaSection({ onCtaClick, promoPrice }: FinalCtaSectionProps
         </h2>
 
         <p className="text-slate-300 text-sm sm:text-base max-w-xl mx-auto font-light mb-8">
-          Tenha todas as fórmulas do Ensino Médio sempre à mão. Estude com mais foco, rapidez e segurança para suas provas e vestibulares.
+          Tenha todas as fórmulas do Ensino Médio e Concursos Públicos sempre à mão. Estude com mais foco, rapidez e segurança para suas provas e vestibulares.
         </p>
 
         {/* CTA Button */}
@@ -38,8 +38,6 @@ export function FinalCtaSection({ onCtaClick, promoPrice }: FinalCtaSectionProps
         <div className="border-t border-slate-800/80 pt-8 text-center text-xs text-slate-400">
           <p className="text-[11px] text-slate-400 leading-relaxed max-w-xl mx-auto">
             © {new Date().getFullYear()} Mapas Mentais de Matemática. Todos os direitos reservados.
-            <br />
-            Este produto é um material educacional independente desenvolvido para fins didáticos e de revisão para estudantes do Ensino Médio.
           </p>
         </div>
       </div>
