@@ -185,6 +185,34 @@ export const TRUST_FEATURES = [
   },
 ];
 
+export const TESTIMONIAL_IMAGES = [
+  {
+    id: 'dep-1',
+    alt: 'Conversa de WhatsApp com Juliana Martins',
+    image: 'https://i.ibb.co/Q3Mt59p6/Conversa-de-Whats-App-com-Juliana-Martins.png',
+  },
+  {
+    id: 'dep-2',
+    alt: 'Conversa no WhatsApp com Juliana',
+    image: 'https://i.ibb.co/XfN2p8Zd/Conversa-no-Whats-App-com-Juliana.png',
+  },
+  {
+    id: 'dep-3',
+    alt: 'Depoimento no WhatsApp em português',
+    image: 'https://i.ibb.co/3y5g5cNZ/Depoimento-no-Whats-App-em-portugu-s.png',
+  },
+  {
+    id: 'dep-4',
+    alt: 'Depoimento positivo no WhatsApp',
+    image: 'https://i.ibb.co/ymGsqd39/Depoimento-positivo-no-Whats-App.png',
+  },
+  {
+    id: 'dep-5',
+    alt: 'Depoimento sobre mapas mentais no WhatsApp',
+    image: 'https://i.ibb.co/B5FRYq0Y/Depoimento-sobre-mapas-mentais-no-Whats-App.png',
+  },
+];
+
 export const TESTIMONIALS_DATA: TestimonialItem[] = [
   {
     id: 't1',

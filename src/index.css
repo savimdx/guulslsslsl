@@ -31,3 +31,10 @@
   animation: infinite-marquee 48s linear infinite;
   will-change: transform;
 }
+
+.animate-infinite-marquee-testimonials {
+  display: flex;
+  width: max-content;
+  animation: infinite-marquee 26s linear infinite;
+  will-change: transform;
+}
