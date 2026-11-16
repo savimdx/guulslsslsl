@@ -57,8 +57,12 @@ export default function App() {
         }
         if (
           !Array.isArray(parsed.bonuses) ||
-          parsed.bonuses.some((b: { title?: string }) =>
-            b.title?.includes('Guia de Macetes do ENEM & Vestibulares')
+          parsed.bonuses.some(
+            (b: { title?: string }) =>
+              b.title?.includes('Guia de Macetes do ENEM & Vestibulares') ||
+              b.title?.includes('+100 Questões de Matemática resolvidas') ||
+              b.title?.includes('Manual de Matemática para o ENEM') ||
+              b.title?.includes('Apostila de Matemática para Concursos')
           )
         ) {
           parsed.bonuses = DEFAULT_CONFIG.bonuses;
