@@ -79,7 +79,7 @@ export function ProblemSolution() {
               </h3>
 
               <p className="text-sm sm:text-base text-slate-600 leading-relaxed mb-6">
-                Com mais de 180 mapas mentais, você encontra as principais fórmulas organizadas visualmente, facilitando a consulta e a revisão dos conteúdos.
+                Com mais de 700 mapas mentais, você encontra as principais fórmulas organizadas visualmente, facilitando a consulta e a revisão dos conteúdos.
               </p>
 
               <ul className="space-y-2.5 pt-4 border-t border-slate-100 text-xs sm:text-sm text-slate-700 font-medium">

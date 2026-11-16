@@ -7,8 +7,8 @@ export const DEFAULT_CONFIG: OfferConfig = {
   installments: 'ou 2x de R$ 5,20 no cartão',
   savingsText: 'Você economiza R$ 87,00 hoje',
   guaranteeDays: 7,
-  productTitle: '+180 Mapas Mentais de Fórmulas de Matemática para Ensino Médio e Concursos Públicos',
-  heroHeadlineHighlight: '+180 Mapas Mentais',
+  productTitle: '+700 Mapas Mentais de Fórmulas de Matemática para Ensino Médio e Concursos Públicos',
+  heroHeadlineHighlight: '+700 Mapas Mentais',
   heroHeadlineSuffix: 'de Fórmulas de Matemática para Ensino Médio e Concursos Públicos',
   heroSubtitle:
     'Aprenda, revise e memorize as principais fórmulas de Matemática de maneira visual, simples e organizada. Tenha tudo o que precisa para estudar em um só lugar, serve para o Ensino Médio e para Concursos Públicos!',
@@ -16,32 +16,32 @@ export const DEFAULT_CONFIG: OfferConfig = {
   bonuses: [
     {
       id: 'b1',
-      title: 'Bônus #1 — Guia de Macetes do ENEM & Vestibulares',
-      description: 'As 40 pegadinhas clássicas de matemática resolvidas em 1 página.',
+      title: 'Bônus #1 — Manual de Matemática para o ENEM',
+      description: 'Os tópicos e fórmulas que mais caem na prova de Matemática do ENEM.',
       value: 'R$ 37,00',
     },
     {
       id: 'b2',
-      title: 'Bônus #2 — Caderno de 100 Questões Resolvidas Passo a Passo',
-      description: 'Exercícios práticos com aplicação direta das fórmulas de cada mapa.',
+      title: 'Bônus #2 — 10 Macetes para gabaritar qualquer prova de Matemática',
+      description: 'Estratégias rápidas de resolução para ganhar tempo e evitar pegadinhas.',
       value: 'R$ 47,00',
     },
     {
       id: 'b3',
-      title: 'Bônus #3 — Cronograma Tático de Revisão (30 Dias)',
-      description: 'Planejamento diário para cobrir todo o conteúdo sem sobrecarga.',
-      value: 'R$ 29,00',
+      title: 'Bônus #3 — +100 Questões de Matemática resolvidas para Concursos Públicos',
+      description: 'Questões comentadas passo a passo com aplicação direta das fórmulas.',
+      value: 'R$ 39,00',
     },
     {
       id: 'b4',
-      title: 'Bônus #4 — Tabela Resumo em Alta Resolução para Impressão',
-      description: 'Folha A4 laminável para fixar na parede do seu quarto ou caderno.',
-      value: 'R$ 19,00',
+      title: 'Bônus #4 — Apostila de Matemática para Concursos',
+      description: 'Material completo e objetivo focado nos editais de concursos públicos.',
+      value: 'R$ 29,00',
     },
   ],
 };
 
-export const PRODUCT_BUNDLE_IMAGE = 'https://i.ibb.co/h1ckyhLx/180-Mapas-Mentais-de-Matem-tica-1.png';
+export const PRODUCT_BUNDLE_IMAGE = 'https://i.ibb.co/DDyQyGNt/700-Mapas-Mentais-de-Matem-tica-comp.png';
 
 export const MATH_TOPICS_TAGS = [
   'Produtos notáveis',
@@ -155,7 +155,7 @@ export const MINDMAP_SLIDES: MindMapSlide[] = [
 ];
 
 export const WHAT_YOU_RECEIVE_ITEMS = [
-  { text: 'Mais de 180 Mapas Mentais de Fórmulas de Matemática', detail: 'Cobre todo o conteúdo do Ensino Médio e Concursos Públicos' },
+  { text: 'Mais de 700 Mapas Mentais de Fórmulas de Matemática', detail: 'Cobre todo o conteúdo do Ensino Médio e Concursos Públicos' },
   { text: 'Fórmulas organizadas por assunto', detail: 'Fácil localização em segundos sem perder tempo' },
   { text: 'Conteúdo do Ensino Médio e Concursos Públicos', detail: 'Foco total em provas, vestibulares (ENEM) e concursos públicos' },
   { text: 'Material de fácil consulta', detail: 'Diagramação limpa em alta definição para celular e PC' },

@@ -42,7 +42,7 @@ export function OfferCardSection({ config, onCtaClick }: OfferCardSectionProps) 
                 <div className="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0">
                   <Check className="w-3.5 h-3.5 stroke-[3]" />
                 </div>
-                <span className="font-semibold">+180 Mapas Mentais de Fórmulas de Matemática para Ensino Médio e Concursos Públicos</span>
+                <span className="font-semibold">+700 Mapas Mentais de Fórmulas de Matemática para Ensino Médio e Concursos Públicos</span>
               </div>
               <div className="flex items-center gap-2.5">
                 <div className="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0">

@@ -1,7 +1,7 @@
 import { ShieldCheck, BookOpen, Smartphone, FolderTree, Eye, Clock } from 'lucide-react';
 import { MATH_TOPICS_TAGS } from '../data/content';
 
-const HERO_BUNDLE_IMAGE = 'https://i.ibb.co/h1ckyhLx/180-Mapas-Mentais-de-Matem-tica-1.png';
+const HERO_BUNDLE_IMAGE = 'https://i.ibb.co/DDyQyGNt/700-Mapas-Mentais-de-Matem-tica-comp.png';
 
 interface HeroSectionProps {
   onCtaClick?: () => void;
@@ -39,7 +39,7 @@ export function HeroSection({ subtitle }: HeroSectionProps) {
 
         {/* Main Headline */}
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[50px] font-extrabold text-[#07152B] tracking-tight leading-[1.15] mb-5 max-w-4xl">
-          <span className="text-[#FF9500] drop-shadow-xs">+180 Mapas Mentais</span>{' '}
+          <span className="text-[#FF9500] drop-shadow-xs">+700 Mapas Mentais</span>{' '}
           de Fórmulas de Matemática para Ensino Médio e Concursos Públicos
         </h1>
 
@@ -53,7 +53,7 @@ export function HeroSection({ subtitle }: HeroSectionProps) {
           <div className="relative mx-auto rounded-2xl overflow-hidden shadow-2xl bg-white border border-[#D0E2FA]">
             <img
               src={HERO_BUNDLE_IMAGE}
-              alt="Mockup do material de +180 Mapas Mentais de Fórmulas de Matemática para Ensino Médio e Concursos Públicos"
+              alt="Mockup do material de +700 Mapas Mentais de Fórmulas de Matemática para Ensino Médio e Concursos Públicos"
               referrerPolicy="no-referrer"
               className="w-full h-auto object-cover"
             />

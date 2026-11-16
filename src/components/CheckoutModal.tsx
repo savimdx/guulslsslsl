@@ -95,7 +95,7 @@ export function CheckoutModal({
                 <div className="flex justify-between items-start">
                   <div>
                     <h4 className="font-extrabold text-sm text-[#07152B]">
-                      +180 Mapas Mentais de Matemática
+                      +700 Mapas Mentais de Fórmulas de Matemática
                     </h4>
                     <p className="text-xs text-slate-600 mt-0.5">
                       Ensino Médio e Concursos Públicos + Todos os 4 Bônus

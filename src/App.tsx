@@ -40,7 +40,7 @@ export default function App() {
         if (
           !parsed.productTitle ||
           !parsed.productTitle.includes('para Ensino Médio e Concursos Públicos') ||
-          !parsed.productTitle.includes('+180')
+          !parsed.productTitle.includes('+700')
         ) {
           parsed.productTitle = DEFAULT_CONFIG.productTitle;
         }
@@ -54,6 +54,14 @@ export default function App() {
         if (!parsed.promoPrice || parsed.promoPrice === '19,90') {
           parsed.promoPrice = DEFAULT_CONFIG.promoPrice;
           parsed.savingsText = DEFAULT_CONFIG.savingsText;
+        }
+        if (
+          !Array.isArray(parsed.bonuses) ||
+          parsed.bonuses.some((b: { title?: string }) =>
+            b.title?.includes('Guia de Macetes do ENEM & Vestibulares')
+          )
+        ) {
+          parsed.bonuses = DEFAULT_CONFIG.bonuses;
         }
         return { ...DEFAULT_CONFIG, ...parsed };
       }
