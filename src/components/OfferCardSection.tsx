@@ -116,12 +116,23 @@ export function OfferCardSection({ config, onCtaClick }: OfferCardSectionProps) 
             </div>
 
             {/* Primary Purchase Button */}
-            <button
-              onClick={onCtaClick}
-              className="w-full py-4 px-6 bg-[#16A34A] hover:bg-[#15803D] active:scale-[0.99] text-white font-black text-lg sm:text-xl rounded-xl shadow-lg hover:shadow-green-500/30 transition-all duration-200 uppercase tracking-wide cursor-pointer flex items-center justify-center gap-2"
-            >
-              <span>QUERO COMPRAR AGORA</span>
-            </button>
+            {config.checkoutUrl && config.checkoutUrl.trim().startsWith('http') ? (
+              <a
+                href={config.checkoutUrl.trim()}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full py-4 px-6 bg-[#16A34A] hover:bg-[#15803D] active:scale-[0.99] text-white font-black text-lg sm:text-xl rounded-xl shadow-lg hover:shadow-green-500/30 transition-all duration-200 uppercase tracking-wide cursor-pointer flex items-center justify-center gap-2 no-underline"
+              >
+                <span>QUERO COMPRAR AGORA</span>
+              </a>
+            ) : (
+              <button
+                onClick={onCtaClick}
+                className="w-full py-4 px-6 bg-[#16A34A] hover:bg-[#15803D] active:scale-[0.99] text-white font-black text-lg sm:text-xl rounded-xl shadow-lg hover:shadow-green-500/30 transition-all duration-200 uppercase tracking-wide cursor-pointer flex items-center justify-center gap-2"
+              >
+                <span>QUERO COMPRAR AGORA</span>
+              </button>
+            )}
 
             {/* Trust and Payment Security Badges */}
             <div className="mt-5">

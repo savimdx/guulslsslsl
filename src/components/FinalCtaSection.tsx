@@ -3,9 +3,10 @@ import { ArrowRight, Lock } from 'lucide-react';
 interface FinalCtaSectionProps {
   onCtaClick: () => void;
   promoPrice: string;
+  checkoutUrl?: string;
 }
 
-export function FinalCtaSection({ onCtaClick, promoPrice }: FinalCtaSectionProps) {
+export function FinalCtaSection({ onCtaClick, promoPrice, checkoutUrl }: FinalCtaSectionProps) {
   return (
     <footer className="bg-[#07152B] text-white pt-16 md:pt-20 pb-12 px-4 sm:px-6 lg:px-8 border-t border-slate-800">
       <div className="max-w-3xl mx-auto text-center">
@@ -20,13 +21,25 @@ export function FinalCtaSection({ onCtaClick, promoPrice }: FinalCtaSectionProps
 
         {/* CTA Button */}
         <div className="max-w-md mx-auto mb-12">
-          <button
-            onClick={onCtaClick}
-            className="w-full py-4 px-8 bg-[#16A34A] hover:bg-[#15803D] active:scale-[0.99] text-white font-extrabold text-lg sm:text-xl rounded-xl shadow-xl hover:shadow-green-500/25 transition-all duration-200 uppercase tracking-wide cursor-pointer flex items-center justify-center gap-2"
-          >
-            <span>QUERO GARANTIR POR R${promoPrice}</span>
-            <ArrowRight className="w-5 h-5" />
-          </button>
+          {checkoutUrl && checkoutUrl.trim().startsWith('http') ? (
+            <a
+              href={checkoutUrl.trim()}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full py-4 px-8 bg-[#16A34A] hover:bg-[#15803D] active:scale-[0.99] text-white font-extrabold text-lg sm:text-xl rounded-xl shadow-xl hover:shadow-green-500/25 transition-all duration-200 uppercase tracking-wide cursor-pointer flex items-center justify-center gap-2 no-underline"
+            >
+              <span>QUERO GARANTIR POR R${promoPrice}</span>
+              <ArrowRight className="w-5 h-5" />
+            </a>
+          ) : (
+            <button
+              onClick={onCtaClick}
+              className="w-full py-4 px-8 bg-[#16A34A] hover:bg-[#15803D] active:scale-[0.99] text-white font-extrabold text-lg sm:text-xl rounded-xl shadow-xl hover:shadow-green-500/25 transition-all duration-200 uppercase tracking-wide cursor-pointer flex items-center justify-center gap-2"
+            >
+              <span>QUERO GARANTIR POR R${promoPrice}</span>
+              <ArrowRight className="w-5 h-5" />
+            </button>
+          )}
 
           <p className="text-xs text-slate-400 mt-2.5 flex items-center justify-center gap-1.5">
             <Lock className="w-3.5 h-3.5 text-emerald-400" />

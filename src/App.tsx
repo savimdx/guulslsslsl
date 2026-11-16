@@ -63,6 +63,9 @@ export default function App() {
         ) {
           parsed.bonuses = DEFAULT_CONFIG.bonuses;
         }
+        if (!parsed.checkoutUrl || !parsed.checkoutUrl.trim()) {
+          parsed.checkoutUrl = DEFAULT_CONFIG.checkoutUrl;
+        }
         return { ...DEFAULT_CONFIG, ...parsed };
       }
     } catch {
@@ -81,6 +84,10 @@ export default function App() {
     title: '',
   });
 
+  useEffect(() => {
+    document.title = '+700 Mapas Mentais de Fórmulas de Matemática para Ensino Médio e Concursos Públicos';
+  }, []);
+
   const handleSaveConfig = (newConfig: OfferConfig) => {
     setConfig(newConfig);
     try {
@@ -98,7 +105,7 @@ export default function App() {
   // Universal CTA action: if custom checkout URL is set, redirect; else open preview checkout modal
   const handleUniversalCta = () => {
     if (config.checkoutUrl && config.checkoutUrl.trim().startsWith('http')) {
-      window.open(config.checkoutUrl.trim(), '_blank');
+      window.location.assign(config.checkoutUrl.trim());
     } else {
       setIsCheckoutModalOpen(true);
     }
@@ -159,7 +166,8 @@ export default function App() {
       {/* SEÇÃO 10 — CTA FINAL & RODAPÉ */}
       <FinalCtaSection 
         onCtaClick={handleUniversalCta} 
-        promoPrice={config.promoPrice} 
+        promoPrice={config.promoPrice}
+        checkoutUrl={config.checkoutUrl}
       />
 
       {/* Modals & Drawers */}

@@ -1,7 +1,7 @@
 import { OfferConfig, MindMapSlide, TestimonialItem, FaqItem } from '../types';
 
 export const DEFAULT_CONFIG: OfferConfig = {
-  checkoutUrl: '', // Editable by user; defaults to modal preview
+  checkoutUrl: 'https://pay.wiapy.com/25NBox0D7sPe',
   originalPrice: 'R$ 97,00',
   promoPrice: '10,00',
   installments: 'ou 2x de R$ 5,20 no cartão',
