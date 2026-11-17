@@ -3,9 +3,9 @@ import { OfferConfig, MindMapSlide, TestimonialItem, FaqItem } from '../types';
 export const DEFAULT_CONFIG: OfferConfig = {
   checkoutUrl: 'https://pay.wiapy.com/25NBox0D7sPe',
   originalPrice: 'R$ 97,00',
-  promoPrice: '10,00',
-  installments: 'ou 2x de R$ 5,20 no cartão',
-  savingsText: 'Você economiza R$ 87,00 hoje',
+  promoPrice: '19,90',
+  installments: 'ou 2x de R$ 10,40 no cartão',
+  savingsText: 'Você economiza R$ 77,10 hoje',
   guaranteeDays: 7,
   productTitle: '+700 Mapas Mentais de Fórmulas de Matemática para Ensino Médio e Concursos Públicos',
   heroHeadlineHighlight: '+700 Mapas Mentais',

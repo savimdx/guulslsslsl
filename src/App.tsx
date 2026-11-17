@@ -51,7 +51,7 @@ export default function App() {
         ) {
           parsed.topBannerText = DEFAULT_CONFIG.topBannerText;
         }
-        if (!parsed.promoPrice || parsed.promoPrice === '19,90') {
+        if (!parsed.promoPrice || parsed.promoPrice === '10,00') {
           parsed.promoPrice = DEFAULT_CONFIG.promoPrice;
           parsed.savingsText = DEFAULT_CONFIG.savingsText;
         }
