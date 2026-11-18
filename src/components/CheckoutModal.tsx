@@ -98,7 +98,7 @@ export function CheckoutModal({
                       +700 Mapas Mentais de Fórmulas de Matemática
                     </h4>
                     <p className="text-xs text-slate-600 mt-0.5">
-                      Ensino Médio e Concursos Públicos + Todos os 3 Bônus
+                      Ensino Médio e Concursos Públicos + Todos os 4 Bônus
                     </p>
                   </div>
                   <div className="text-right">

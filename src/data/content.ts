@@ -32,6 +32,12 @@ export const DEFAULT_CONFIG: OfferConfig = {
       description: 'Desafios envolventes para treinar raciocínio lógico e memorizar conceitos.',
       value: 'R$ 29,00',
     },
+    {
+      id: 'b4',
+      title: 'Bônus #4 — Simulados de Matemática para Concursos',
+      description: 'Treine no ritmo de prova com questões selecionadas no estilo das principais bancas.',
+      value: 'R$ 37,00',
+    },
   ],
 };
 

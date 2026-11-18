@@ -20,6 +20,7 @@ import { FinalCtaSection } from './components/FinalCtaSection';
 import { ConfigDrawer } from './components/ConfigDrawer';
 import { CheckoutModal } from './components/CheckoutModal';
 import { ImageModal } from './components/ImageModal';
+import { SalesNotification } from './components/SalesNotification';
 
 const CONFIG_STORAGE_KEY = 'math_salespage_config_v1';
 
@@ -57,6 +58,7 @@ export default function App() {
         }
         if (
           !Array.isArray(parsed.bonuses) ||
+          parsed.bonuses.length < 4 ||
           parsed.bonuses.some(
             (b: { title?: string }) =>
               b.title?.includes('Guia de Macetes do ENEM & Vestibulares') ||
@@ -131,6 +133,9 @@ export default function App() {
     <div className="min-h-screen bg-white text-[#07152B] selection:bg-[#FF9500] selection:text-white flex flex-col font-sans">
       {/* SEÇÃO 1 — BARRA DE OFERTA */}
       <OfferBar bannerText={config.topBannerText} />
+
+      {/* Notificação discreta de compras recentes */}
+      <SalesNotification />
 
       {/* Main Page Flow */}
       <main className="flex-1">
